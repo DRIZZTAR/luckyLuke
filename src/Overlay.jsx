@@ -60,7 +60,15 @@ export default function Overlay() {
 			<div className={`menu ${menuOpen ? 'active' : ''}`}>
 				<div className='menu-close' onClick={closeMenu}></div>
 				<div className='menu-content'>
-					<div className='menu-item inter-bold'>Home</div>
+					<div className='menu-item inter-bold'>
+						<a
+							href='https://www.linkedin.com/in/tyson-skakun-tail/'
+							target='_blank'
+							rel='noopener noreferrer'
+						>
+							HireMe
+						</a>
+					</div>
 					<div className='menu-item inter-bold'>About</div>
 					<div className='menu-item inter-bold'>Contact</div>
 					<div className='menu-item inter-bold'>Services</div>
