@@ -3,8 +3,6 @@ import {
 	OrbitControls,
 	Float,
 	Stage,
-	MeshReflectorMaterial,
-	Backdrop,
 	Clouds,
 	Cloud,
 } from '@react-three/drei';
@@ -16,6 +14,7 @@ import { useLoader } from '@react-three/fiber';
 import Placeholder from './Placeholder.jsx';
 import LuckyLuke from './LuckyLuke.jsx';
 import Model from './Model.jsx';
+import Loader from './Loader.jsx'; // Create this component
 
 export default function Experience() {
 	const luckyLukeTexture = useLoader(TextureLoader, '/LuckyLuke.jpg');
@@ -38,28 +37,7 @@ export default function Experience() {
 			<Environment background map={luckyLukeTexture} />
 
 			<Stage shadows={false}>
-				{/* <mesh
-					position={[1, -1, -2]}
-					rotation-x={-Math.PI * 0.2}
-					scale={10}
-				>
-					<planeGeometry />
-					<MeshReflectorMaterial
-						resolution={1024}
-						mirror={1}
-						depthScale={0}
-						minDepthThreshold={0.9}
-						maxDepthThreshold={1}
-						depthToBlurRatioBias={0.25}
-						distortion={1}
-					/>
-				</mesh> */}
-
-				<Suspense
-					fallback={
-						<Placeholder position-y={0.5} scale={[2, 3, 2]} />
-					}
-				>
+				<Suspense fallback={<Loader />}>
 					<Float floatIntensity={1} speed={2} position={[2, 1, 0]}>
 						{/*Image*/}
 						<mesh

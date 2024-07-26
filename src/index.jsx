@@ -1,7 +1,7 @@
-import './style.css'
-import ReactDOM from 'react-dom/client'
-import { Canvas } from '@react-three/fiber'
-import Experience from './Experience.jsx'
+import './style.css';
+import ReactDOM from 'react-dom/client';
+import { Canvas } from '@react-three/fiber';
+import Experience from './Experience.jsx';
 import {
 	Bloom,
 	DepthOfField,
@@ -9,8 +9,10 @@ import {
 	Noise,
 	Vignette,
 } from '@react-three/postprocessing';
+import Loader from './Loader.jsx';
+import { Suspense } from 'react';
 
-const root = ReactDOM.createRoot(document.querySelector('#root'))
+const root = ReactDOM.createRoot(document.querySelector('#root'));
 
 root.render(
 	<Canvas
@@ -22,7 +24,9 @@ root.render(
 			position: [-0.3, -0.02, 1],
 		}}
 	>
-		<Experience />
+		<Suspense fallback={<Loader />}>
+			<Experience />
+		</Suspense>
 		<EffectComposer>
 			<DepthOfField
 				focusDistance={0}
