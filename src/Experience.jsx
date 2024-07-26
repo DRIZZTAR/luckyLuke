@@ -38,7 +38,7 @@ export default function Experience() {
 
 			<Stage shadows={false}>
 				<Suspense fallback={<Loader />}>
-					<Float floatIntensity={1} speed={2} position={[2, 1, 0]}>
+					<Float floatIntensity={1} speed={2} position={[2, 1, 2]}>
 						{/*Image*/}
 						<mesh
 							position={[-1, 1.15, 2.25]}
