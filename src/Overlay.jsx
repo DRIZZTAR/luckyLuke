@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 
-
 export default function Overlay() {
 	const [menuOpen, setMenuOpen] = useState(false);
 
@@ -42,17 +41,13 @@ export default function Overlay() {
 				<p className='inter-thin'>issue #O1</p>
 			</div>
 			<div className='bottom-left inter-regular'>
-				ArtIsdead{' '}
+				art@fter{' '}
 				<a href='https://www.TysonSkakun.dev'>TysonSkakun.Dev</a>
 			</div>
 			<div className='bottom-right inter-thin'>
 				A Wild West Unfolds...
 				<br />
 				Journey through the desert
-				<br />
-				As the darkness without you
-				<br />
-				is divided against itself
 			</div>
 			<div
 				className={`hamburger ${menuOpen ? 'active' : ''}`}
@@ -63,8 +58,7 @@ export default function Overlay() {
 				<div />
 			</div>
 			<div className={`menu ${menuOpen ? 'active' : ''}`}>
-				<div className='menu-close' onClick={closeMenu}>
-				</div>
+				<div className='menu-close' onClick={closeMenu}></div>
 				<div className='menu-content'>
 					<div className='menu-item inter-bold'>Home</div>
 					<div className='menu-item inter-bold'>About</div>
