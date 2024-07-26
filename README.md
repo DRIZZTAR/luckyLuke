@@ -1,6 +1,6 @@
 # Lucky Luke
 
-![Lucky Luke](/LuckyLuke.jpg)
+![Lucky Luke](./public/LuckyLuke.jpg)
 
 Welcome to **Lucky Luke**! 🌟 This project is a blend of 3D modeling and cutting-edge web technologies to create an immersive scene that showcases the power of modern web development. We've used React Three Fiber, Drei, and more to bring this scene to life. Let's dive into the world of Lucky Luke!
 
