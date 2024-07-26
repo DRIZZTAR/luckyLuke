@@ -6,41 +6,43 @@ import {
 	Bloom,
 	DepthOfField,
 	EffectComposer,
-	Noise,
 	Vignette,
 } from '@react-three/postprocessing';
 import Loader from './Loader.jsx';
 import { Suspense } from 'react';
+import Overlay from './Overlay.jsx';
 
 const root = ReactDOM.createRoot(document.querySelector('#root'));
 
 root.render(
-	<Canvas
-		shadows
-		camera={{
-			fov: 45,
-			near: 0.1,
-			far: 200,
-			position: [-0.3, -0.02, 1],
-		}}
-	>
-		<Suspense fallback={<Loader />}>
-			<Experience />
-		</Suspense>
-		<EffectComposer>
-			<DepthOfField
-				focusDistance={0}
-				focalLength={0.1}
-				bokehScale={2}
-				height={480}
-			/>
-			<Bloom
-				luminanceThreshold={0.4}
-				luminanceSmoothing={0.9}
-				height={300}
-			/>
-			<Noise opacity={0.02} />
-			<Vignette eskil={false} offset={0.1} darkness={1.1} />
-		</EffectComposer>
-	</Canvas>
+	<>
+		<Canvas
+			shadows
+			camera={{
+				fov: 100,
+				near: 0.1,
+				far: 200,
+				position: [-0.5, -0.2, 2],
+			}}
+		>
+			<Suspense fallback={<Loader />}>
+				<Experience />
+			</Suspense>
+			<EffectComposer>
+				<DepthOfField
+					focusDistance={0}
+					focalLength={0.1}
+					bokehScale={2}
+					height={480}
+				/>
+				<Bloom
+					luminanceThreshold={1}
+					luminanceSmoothing={0.2}
+					height={100}
+				/>
+				<Vignette eskil={false} offset={0.1} darkness={1.1} />
+			</EffectComposer>
+		</Canvas>
+		<Overlay />
+	</>
 );
