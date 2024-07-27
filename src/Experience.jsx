@@ -23,16 +23,21 @@ export default function Experience() {
 		<>
 			{/* <Perf position='top-left' /> */}
 
-			<OrbitControls makeDefault/>
+			<OrbitControls
+				makeDefault
+				minDistance={5}
+				maxDistance={7}
+				enableZoom={true}
+				enablePan={false}
+				dampingFactor={0.01}
+			/>
 
 			<directionalLight
 				castShadow
 				position={[2, 10, 2]}
-				intensity={4.5}
-				shadow-normalBias={0.1}
+				intensity={3.5}
+				shadow-normalBias={1.1}
 			/>
-
-			<ambientLight intensity={0.4} />
 
 			<Environment background map={luckyLukeTexture} />
 
@@ -40,6 +45,7 @@ export default function Experience() {
 				<Suspense fallback={<Loader />}>
 					<Float floatIntensity={1} speed={2} position={[2, 1, 2]}>
 						{/*Image*/}
+
 						<mesh
 							position={[-1, 1.15, 2.25]}
 							rotation={[-0.6, 0, 0]}
@@ -52,22 +58,22 @@ export default function Experience() {
 							/>
 						</mesh>
 						{/*Models*/}
-						<Model />
 						<LuckyLuke scale={1} position={[-2, 0, 3]} rotation-x />
+						<Model />
 						{/* Effects */}
 					</Float>
 					<Float
-						floatIntensity={0.2}
-						speed={0.5}
+						floatIntensity={Math.random() * 20}
+						speed={Math.random() * 5}
 						position={[0, 0, -5]}
 					>
 						<Clouds material={THREE.MeshBasicMaterial}>
 							<Cloud
-								seed={102}
-								segments={50}
+								seed={12}
+								segments={100}
 								bounds={[25, 25, 25]}
-								volume={10}
-								color='red'
+								volume={5}
+								color='pink'
 								opacity={0.6}
 								position={[0, 3, 2]}
 								scale={[1.5, 1, 1]}

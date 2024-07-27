@@ -3,10 +3,10 @@ import ReactDOM from 'react-dom/client';
 import { Canvas } from '@react-three/fiber';
 import Experience from './Experience.jsx';
 import {
-	Bloom,
-	DepthOfField,
-	EffectComposer,
-	Vignette,
+  Bloom,
+  DepthOfField,
+  EffectComposer,
+  Vignette,
 } from '@react-three/postprocessing';
 import Loader from './Loader.jsx';
 import { Suspense } from 'react';
@@ -24,6 +24,7 @@ root.render(
 				far: 200,
 				position: [-0.5, -0.2, 2],
 			}}
+			dpr={[1, 2]} // Adjust pixel ratio for better performance on mobile
 		>
 			<Suspense fallback={<Loader />}>
 				<Experience />
@@ -31,12 +32,12 @@ root.render(
 			<EffectComposer>
 				<DepthOfField
 					focusDistance={0}
-					focalLength={0.1}
+					focalLength={0.2}
 					bokehScale={2}
 					height={480}
 				/>
 				<Bloom
-					luminanceThreshold={1}
+					luminanceThreshold={2}
 					luminanceSmoothing={0.2}
 					height={100}
 				/>

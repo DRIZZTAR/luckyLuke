@@ -40,14 +40,15 @@ export default function Overlay() {
 				</h1>
 				<p className='inter-thin'>issue #O1</p>
 			</div>
-			<div className='bottom-left inter-regular'>
-				art@fter{' '}
+			<div className='bottom-left'>
 				<a href='https://www.TysonSkakun.dev'>TysonSkakun.Dev</a>
 			</div>
 			<div className='bottom-right inter-thin'>
-				A Wild West Unfolds...
+				A Wild West Unfolds
 				<br />
 				Journey through the desert
+				<br />
+				Until the tricks turn Trade
 			</div>
 			<div
 				className={`hamburger ${menuOpen ? 'active' : ''}`}
