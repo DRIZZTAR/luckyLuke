@@ -97,8 +97,12 @@ body,
   right: 20px;
   color: rgb(255, 255, 255);
   font-size: 1.0rem;
-  line-height: 0.2;
+  line-height: 0.001;
   text-align: right;
+}
+
+.bottom-right p {
+  margin: 15px 0;
 }
 
 .barcode-container {
@@ -110,9 +114,9 @@ body,
   display: flex;
   align-items: flex-end;
   height: 40px;
-  border: #e5ff007e 2px solid;
+  border: #ffffff 1px dotted;
   border-radius: 2px;
-  padding: 3px;
+  padding: 10px;
 }
 
 .bar {

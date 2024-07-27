@@ -46,9 +46,9 @@ export default function Overlay() {
 			<div class='bottom-right'>
 				<p class='inter-bold'>The Wild West Unfolds</p>
 				<br />
-				<p class='inter-bold'>The name of the Word is Warden</p>
+				<p class='inter-thin'>The name of the Word is Warden</p>
 				<br />
-				<p class='inter-bold'>And Warden shall divide the Light</p>
+				<p class='inter-thin'>And Warden shall divide the Light</p>
 				<div class='barcode-container'>
 					<div class='barcode'>
 						<div class='bar'></div>
@@ -77,7 +77,7 @@ export default function Overlay() {
 			<div className={`menu ${menuOpen ? 'active' : ''}`}>
 				<div className='menu-close' onClick={closeMenu}></div>
 				<div className='menu-content'>
-					<div className='menu-item inter-bold'>
+					<div className='menu-item inter-extra-bold'>
 						<a
 							href='https://www.linkedin.com/in/tyson-skakun-tail/'
 							target='_blank'
@@ -86,9 +86,11 @@ export default function Overlay() {
 							HireMe
 						</a>
 					</div>
-					<div className='menu-item inter-bold'>Tall Tales</div>
-					<div className='menu-item inter-bold'>Contact</div>
-					<div className='menu-item inter-bold'>Cowboy Services</div>
+					<div className='menu-item inter-regular'>Tall Tales</div>
+					<div className='menu-item inter-regular'>Contact</div>
+					<div className='menu-item inter-regular'>
+						Cowboy Services
+					</div>
 				</div>
 			</div>
 		</div>
