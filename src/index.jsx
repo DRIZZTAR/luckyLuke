@@ -19,9 +19,9 @@ root.render(
 		<Canvas
 			shadows
 			camera={{
-				fov: 100,
+				fov: 80,
 				near: 0.1,
-				far: 200,
+				far: 130,
 				position: [-0.5, -0.2, 2],
 			}}
 			dpr={[1, 2]} // Adjust pixel ratio for better performance on mobile

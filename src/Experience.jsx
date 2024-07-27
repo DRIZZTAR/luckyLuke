@@ -39,7 +39,7 @@ export default function Experience() {
 				shadow-normalBias={1.1}
 			/>
 
-			<Environment background map={luckyLukeTexture} />
+			<Environment background map={luckyLukeTexture}/>
 
 			<Stage shadows={false}>
 				<Suspense fallback={<Loader />}>

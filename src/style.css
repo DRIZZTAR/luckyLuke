@@ -95,11 +95,56 @@ body,
   position: absolute;
   bottom: 20px;
   right: 20px;
-  color: rgba(255, 255, 255, 0.562);
-  font-size: 1.00rem;
-	font-weight: 500;
-  line-height: 1.5;
+  color: rgb(255, 255, 255);
+  font-size: 1.0rem;
+  line-height: 0.2;
   text-align: right;
+}
+
+.barcode-container {
+  margin-top: 5px;
+  display: inline-block;
+}
+
+.barcode {
+  display: flex;
+  align-items: flex-end;
+  height: 40px;
+  border: #e5ff007e 2px solid;
+  border-radius: 2px;
+  padding: 3px;
+}
+
+.bar {
+  width: 5px;
+  background-color: rgb(255, 255, 255);
+  margin-right: 3px;
+}
+
+.bar:nth-child(odd) {
+  height: 100%;
+  background-color: #000000;
+}
+
+.bar:nth-child(even) {
+  height: 80%;
+  background-color: #e5ff00;
+}
+
+.bar:nth-child(3n) {
+  width: 9px;
+  background-color: #ff6f61;
+}
+
+.bar:nth-child(5n) {
+  height: 90%;
+  width:3px;
+  background-color: gold;
+}
+
+.bar:last-child {
+  margin-right: 0;
+  background-color: goldenrod;
 }
 
 .hamburger {
@@ -142,7 +187,7 @@ body,
   right: 0;
   width: 250px;
   height: 100%;
-  background: linear-gradient(270deg, rgba(255, 255, 255, 0.658) 10%, rgba(255, 255, 255, 0.432)100%);
+  background: linear-gradient(270deg, rgba(255, 255, 255, 0) 10%, rgb(255, 255, 255)100%);
   box-shadow: -4px 0px 8px rgba(0, 0, 0, 0.2);
   transform: translateX(100%);
   transition: transform 0.4s ease-in-out;
@@ -247,7 +292,7 @@ body,
 
   .bottom-left,
   .bottom-right {
-    font-size: 0.9rem;
+    font-size: 0.8rem;
   }
 
   .menu {

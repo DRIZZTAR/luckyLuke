@@ -43,12 +43,28 @@ export default function Overlay() {
 			<div className='bottom-left'>
 				<a href='https://www.TysonSkakun.dev'>TysonSkakun.Dev</a>
 			</div>
-			<div className='bottom-right inter-thin'>
-				A Wild West Unfolds
+			<div class='bottom-right'>
+				<p class='inter-bold'>The Wild West Unfolds</p>
 				<br />
-				Journey through the desert
+				<p class='inter-bold'>The name of the Word is Warden</p>
 				<br />
-				Until the tricks turn Trade
+				<p class='inter-bold'>And Warden shall divide the Light</p>
+				<div class='barcode-container'>
+					<div class='barcode'>
+						<div class='bar'></div>
+						<div class='bar'></div>
+						<div class='bar'></div>
+						<div class='bar'></div>
+						<div class='bar'></div>
+						<div class='bar'></div>
+						<div class='bar'></div>
+						<div class='bar'></div>
+						<div class='bar'></div>
+						<div class='bar'></div>
+						<div class='bar'></div>
+						<div class='bar'></div>
+					</div>
+				</div>
 			</div>
 			<div
 				className={`hamburger ${menuOpen ? 'active' : ''}`}
@@ -70,9 +86,9 @@ export default function Overlay() {
 							HireMe
 						</a>
 					</div>
-					<div className='menu-item inter-bold'>About</div>
+					<div className='menu-item inter-bold'>Tall Tales</div>
 					<div className='menu-item inter-bold'>Contact</div>
-					<div className='menu-item inter-bold'>Services</div>
+					<div className='menu-item inter-bold'>Cowboy Services</div>
 				</div>
 			</div>
 		</div>
