@@ -1,305 +1,311 @@
 html,
 body,
 #root {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: url('/LuckyLuke.jpg');
-    background-size: cover; /* Ensure the background image covers the entire page */
-    font-family: "Inter", sans-serif; /* Apply Inter font to the entire page */
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: url('/LuckyLuke.jpg');
+	background-size: cover; /* Ensure the background image covers the entire page */
+	font-family: 'Inter', sans-serif; /* Apply Inter font to the entire page */
 }
 
 /* Define CSS classes for Inter font with variable weights */
 
 .inter-thin {
-	font-family: "Inter", sans-serif;
+	font-family: 'Inter', sans-serif;
 	font-weight: 100; /* Thin weight */
 }
 
 .inter-regular {
-  font-family: "Inter", sans-serif;
-  font-weight: 400; /* Regular weight */
+	font-family: 'Inter', sans-serif;
+	font-weight: 400; /* Regular weight */
 }
 
 .inter-bold {
-  font-family: "Inter", sans-serif;
-  font-weight: 600; /* Bold weight */
+	font-family: 'Inter', sans-serif;
+	font-weight: 600; /* Bold weight */
 }
 
 .inter-extra-bold {
-  font-family: "Inter", sans-serif;
-  font-weight: 900; /* Extra Bold weight */
+	font-family: 'Inter', sans-serif;
+	font-weight: 900; /* Extra Bold weight */
 }
 
 /* Adjust as needed for different weights */
 
-
 .container {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0);
-  display: flex;
-  flex-direction: column;
-  padding: 20px;
-  box-sizing: border-box;
-  pointer-events: none; /* Allow interaction with underlying elements */
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0);
+	display: flex;
+	flex-direction: column;
+	padding: 20px;
+	box-sizing: border-box;
+	pointer-events: none; /* Allow interaction with underlying elements */
 }
 
 .container > * {
-  pointer-events: auto; /* Re-enable pointer events for container children */
+	pointer-events: auto; /* Re-enable pointer events for container children */
 }
 
 .top-left {
-  position: absolute;
-  top: 20px;
-  left: 20px;
-  color: white;
-  font-size: 2rem;
-  font-weight: 700; /* Use Bold weight for headings */
+	position: absolute;
+	top: 20px;
+	left: 20px;
+	color: white;
+	font-size: 2rem;
+	font-weight: 700; /* Use Bold weight for headings */
 }
 
 .top-left h1 {
-  margin: 0;
-  line-height: 1.2;
+	margin: 0;
+	line-height: 1.2;
 }
 
 .top-left p {
-  font-size: 1rem;
-  font-weight: 400; /* Use Regular weight for paragraph text */
+	font-size: 1.3rem;
+	font-weight: 500; /* Use Regular weight for paragraph text */
 }
 
 .bottom-left {
-  position: absolute;
-  bottom: 20px;
-  left: 20px;
-  color: rgba(255, 255, 255, 0.637);
-  font-size: 1rem;
-  font-weight: 500;
+	position: absolute;
+	bottom: 30px;
+	left: 20px;
+	color: rgba(255, 255, 255, 0.5);
+	font-size: 1rem;
+	font-weight: 500;
 }
 
 .bottom-left a {
-  color: #ff6f61;
-  text-decoration: none;
+	color: #ff6f61;
+	text-decoration: none;
 }
 
 .bottom-left a:hover {
-  text-decoration: underline;
+	text-decoration: underline;
 }
 
 .bottom-right {
-  position: absolute;
-  bottom: 20px;
-  right: 20px;
-  color: rgb(255, 255, 255);
-  font-size: 1.0rem;
-  line-height: 0.001;
-  text-align: right;
+	position: absolute;
+	bottom: 20px;
+	right: 20px;
+	color: rgb(255, 255, 255);
+	line-height: 0.001;
+	text-align: right;
+}
+
+.bottom-right h2 {
+	font-size: 1rem;
+	font-weight: 700;
 }
 
 .bottom-right p {
-  margin: 15px 0;
+	font-size: 1rem;
+	font-weight: 300;
+	font-style: italic;
 }
 
 .barcode-container {
-  margin-top: 5px;
-  display: inline-block;
+	margin-top: 5px;
+	display: inline-block;
 }
 
 .barcode {
-  display: flex;
-  align-items: flex-end;
-  height: 40px;
-  border: #ffffff 1px dotted;
-  border-radius: 2px;
-  padding: 10px;
+	display: flex;
+	align-items: flex-end;
+	height: 30px;
+	border: #ffffff69 1px dotted;
+	border-radius: 2px;
+	padding: 5px;
 }
 
 .bar {
-  width: 5px;
-  background-color: rgb(255, 255, 255);
-  margin-right: 3px;
+	width: 5px;
+	background-color: rgb(255, 255, 255);
+	margin-right: 3px;
 }
 
 .bar:nth-child(odd) {
-  height: 100%;
-  background-color: #000000;
+	height: 100%;
+	background-color: #00000080;
 }
 
 .bar:nth-child(even) {
-  height: 80%;
-  background-color: #e5ff00;
+	height: 80%;
+	background-color: #e5ff0080;
 }
 
 .bar:nth-child(3n) {
-  width: 9px;
-  background-color: #ff6f61;
+	width: 9px;
+	background-color: #ff6f6180;
 }
 
 .bar:nth-child(5n) {
-  height: 90%;
-  width:3px;
-  background-color: gold;
+	height: 90%;
+	width: 3px;
+	background-color: rgba(255, 217, 0, 0.5);
 }
 
 .bar:last-child {
-  margin-right: 0;
-  background-color: goldenrod;
+	margin-right: 0;
+	background-color: rgba(218, 165, 32, 0.5);
 }
 
 .hamburger {
-  position: absolute;
-  top: 20px;
-  right: 20px;
-  width: 30px;
-  height: 30px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  cursor: pointer;
-  z-index: 1002; /* Ensure hamburger is above other elements */
+	position: absolute;
+	top: 20px;
+	right: 20px;
+	width: 30px;
+	height: 30px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	cursor: pointer;
+	z-index: 1002; /* Ensure hamburger is above other elements */
 }
 
 .hamburger div {
-  width: 100%;
-  height: 5px;
-  background-color: white;
-  border-radius: 2px;
+	width: 100%;
+	height: 5px;
+	background-color: white;
+	border-radius: 2px;
 }
 
 .hamburger.active div:nth-child(1) {
-    transform: rotate(45deg);
-    top: 10px; /* Adjust as needed */
+	transform: rotate(45deg);
+	top: 10px; /* Adjust as needed */
 }
 
 .hamburger.active div:nth-child(2) {
-    opacity: 0; /* Hide the middle line */
+	opacity: 0; /* Hide the middle line */
 }
 
 .hamburger.active div:nth-child(3) {
-    transform: rotate(-45deg);
-    top: -10px; /* Adjust as needed */
+	transform: rotate(-45deg);
+	top: -10px; /* Adjust as needed */
 }
 
 .menu {
-  position: fixed;
-  top: 0;
-  right: 0;
-  width: 250px;
-  height: 100%;
-  background: linear-gradient(270deg, rgba(255, 255, 255, 0) 10%, rgb(255, 255, 255)100%);
-  box-shadow: -4px 0px 8px rgba(0, 0, 0, 0.2);
-  transform: translateX(100%);
-  transition: transform 0.4s ease-in-out;
-  z-index: 1001;
-  pointer-events: auto; /* Ensure menu is interactive */
+	position: fixed;
+	top: 0;
+	right: 0;
+	width: 250px;
+	height: 100%;
+	background: linear-gradient(
+		270deg,
+		rgba(255, 255, 255, 0) 10%,
+		rgb(255, 255, 255) 100%
+	);
+	box-shadow: -4px 0px 8px rgba(0, 0, 0, 0.2);
+	transform: translateX(100%);
+	transition: transform 0.4s ease-in-out;
+	z-index: 1001;
+	pointer-events: auto; /* Ensure menu is interactive */
 }
 
 .menu.active {
-    transform: translateX(0);
+	transform: translateX(0);
 }
 
 .menu-content {
-    display: flex;
-    flex-direction: column;
-		margin: 20px;
+	display: flex;
+	flex-direction: column;
+	margin: 20px;
 }
 
 .menu-item {
-    margin: 10px 0;
-    font-size: 1.25rem;
-    color: rgba(0, 0, 0, 0.842);
-    cursor: pointer;
+	margin: 10px 0;
+	font-size: 1.25rem;
+	color: rgba(0, 0, 0, 0.842);
+	cursor: pointer;
 }
 
 .menu-item a {
-    text-decoration: none; /* Removes underline */
-    color: inherit; /* Inherits the text color from its parent */
+	text-decoration: none; /* Removes underline */
+	color: inherit; /* Inherits the text color from its parent */
 }
 
-
 .menu-close {
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    width: 30px;
-    height: 30px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-    font-size: 1.5rem;
-    color: #333;
-    z-index: 1002;
+	position: absolute;
+	top: 20px;
+	right: 20px;
+	width: 30px;
+	height: 30px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+	font-size: 1.5rem;
+	color: #333;
+	z-index: 1002;
 }
 
 .menu-close:hover {
-    color: #ff6f61;
+	color: #ff6f61;
 }
 
 .loader-container {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.3);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: white;
-  z-index: 1000;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.3);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: white;
+	z-index: 1000;
 }
 
 .loader {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  gap: 1rem;
-  padding: 2rem;
-  background: rgba(255, 255, 255, 0.1);
-  border-radius: 10px;
-  box-shadow: 1px 4px 0px rgba(255, 0, 0, 0.381);
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	gap: 1rem;
+	padding: 2rem;
+	background: rgba(255, 255, 255, 0.1);
+	border-radius: 10px;
+	box-shadow: 1px 4px 0px rgba(255, 0, 0, 0.381);
 }
 
 .spinner {
-  width: 50px;
-  height: 50px;
-  border: 5px solid rgba(255, 255, 255, 0.3);
-  border-top: 5px solid rgba(0, 55, 1, 0.429);
-  border-radius: 50%;
-  animation: spin 2s linear infinite;
+	width: 50px;
+	height: 50px;
+	border: 5px solid rgba(255, 255, 255, 0.3);
+	border-top: 5px solid rgba(0, 55, 1, 0.429);
+	border-radius: 50%;
+	animation: spin 2s linear infinite;
 }
 
 .loading-text {
-  font-size: 1.25rem;
-  font-weight: 500;
-  font-family: 'Roboto', sans-serif;
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+	font-size: 1.25rem;
+	font-weight: 500;
+	font-family: 'Inter', sans-serif;
+	text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
 }
 
 @keyframes spin {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
 }
 
 @media (max-width: 768px) {
+	.bottom-right {
+		font-size: 0.9rem;
+	}
 
-  .bottom-left,
-  .bottom-right {
-    font-size: 0.8rem;
-  }
-
-  .menu {
-    width: 42%; /* Full-width menu on mobile */
-  }
+	.menu {
+		width: 42%; /* Full-width menu on mobile */
+	}
 }

@@ -38,17 +38,17 @@ export default function Overlay() {
 					<br />
 					LUKE
 				</h1>
-				<p className='inter-thin'>issue #O1</p>
+				<p>issue #O1</p>
 			</div>
 			<div className='bottom-left'>
 				<a href='https://www.TysonSkakun.dev'>TysonSkakun.Dev</a>
 			</div>
 			<div class='bottom-right'>
-				<p class='inter-bold'>The Wild West Unfolds</p>
+				<h2 class='inter-regular'>The Wild West Unfolds</h2>
 				<br />
-				<p class='inter-thin'>The name of the Word is Warden</p>
+				<p class='inter-regular'>The name of the Word is Warden</p>
 				<br />
-				<p class='inter-thin'>And Warden shall divide the Light</p>
+				<p class='inter-regular'>And Warden shall divide the Light</p>
 				<div class='barcode-container'>
 					<div class='barcode'>
 						<div class='bar'></div>

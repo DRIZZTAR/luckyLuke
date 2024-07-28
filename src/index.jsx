@@ -36,11 +36,7 @@ root.render(
 					bokehScale={2}
 					height={480}
 				/>
-				<Bloom
-					luminanceThreshold={2}
-					luminanceSmoothing={0.2}
-					height={100}
-				/>
+
 				<Vignette eskil={false} offset={0.1} darkness={1.1} />
 			</EffectComposer>
 		</Canvas>
