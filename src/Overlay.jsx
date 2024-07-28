@@ -40,30 +40,13 @@ export default function Overlay() {
 				</h1>
 				<p>issue #O1</p>
 			</div>
-			<div className='bottom-left'>
-				<a href='https://www.TysonSkakun.dev'>TysonSkakun.Dev</a>
-			</div>
 			<div class='bottom-right'>
-				<h2 class='inter-regular'>The Wild West Unfolds</h2>
+				<h2 class='inter-extra-bold'>The West Is Wild</h2>
 				<br />
-				<p class='inter-regular'>The name of the Word is Warden</p>
+				<p class='inter-regular'>The Word Is The Warden</p>
 				<br />
-				<p class='inter-regular'>And Warden shall divide the Light</p>
-				<div class='barcode-container'>
-					<div class='barcode'>
-						<div class='bar'></div>
-						<div class='bar'></div>
-						<div class='bar'></div>
-						<div class='bar'></div>
-						<div class='bar'></div>
-						<div class='bar'></div>
-						<div class='bar'></div>
-						<div class='bar'></div>
-						<div class='bar'></div>
-						<div class='bar'></div>
-						<div class='bar'></div>
-						<div class='bar'></div>
-					</div>
+				<div className='bottom-right-link'>
+					<a href='https://www.TysonSkakun.dev'>TysonSkakun.Dev</a>
 				</div>
 			</div>
 			<div
