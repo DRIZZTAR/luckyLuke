@@ -47,15 +47,17 @@ export default function Experience() {
 			/>
 
 			<Environment
-				backgroundIntensity={1.5}
+				backgroundIntensity={1}
 				background
 				map={luckyLukeTexture}
 			/>
 
+			<ambientLight intensity={3.5} />
+
 			<group>
 				<Suspense fallback={<Loader />}>
 					<Float floatIntensity={1} speed={2} position={[0, 1, 0]}>
-						<Center position={[1, 1, 0]} rotation={[1, 0, 0]}>
+						<Center position={[1, 1, 0]} rotation={[1.2, -0.3, 0.6]}>
 							<Stage shadows>
 								<mesh
 									position={[-1, 1.15, 2.25]}
@@ -74,18 +76,17 @@ export default function Experience() {
 									rotation-x
 								/>
 							</Stage>
-							<Model />
 						</Center>
 					</Float>
-					<Float floatIntensity={2} speed={1} position={[0, 0, -5]}>
+					<Float floatIntensity={1} speed={2} position={[0, 0, -4]}>
 						<Clouds material={THREE.MeshStandardMaterial}>
 							<Cloud
 								seed={29}
-								segments={50}
-								bounds={[25, 25, 25]}
-								volume={5}
+								segments={15}
+								bounds={[5, 5, 5]}
+								volume={4}
 								color='white'
-								opacity={0.2}
+								opacity={0.6}
 								position={[0, 3, 2]}
 								scale={[1.5, 1, 1]}
 							/>
