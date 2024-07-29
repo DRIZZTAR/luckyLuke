@@ -5,8 +5,13 @@ export default function Loader() {
 	return (
 		<Html className='loader-container'>
 			<div className='loader'>
-				<div className='spinner'></div>
-				<p className='loading-text'>Loading {progress.toFixed(0)}%</p>
+				<div className='progress-bar'>
+					<div
+						className='progress-bar-fill'
+						style={{ width: `${progress}%` }}
+					></div>
+				</div>
+				<p className='inter-bold'>Feeding The Cattle {progress.toFixed(0)}%</p>
 			</div>
 		</Html>
 	);

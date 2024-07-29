@@ -201,7 +201,7 @@ body,
 	left: 0;
 	width: 100%;
 	height: 100%;
-	background: rgba(0, 0, 0, 0.3);
+	background: rgba(0, 0, 0, 0.192);
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -211,7 +211,7 @@ body,
 
 .loader {
 	display: flex;
-	flex-direction: row;
+	flex-direction: column;
 	align-items: center;
 	justify-content: center;
 	gap: 1rem;
@@ -221,21 +221,20 @@ body,
 	box-shadow: 1px 4px 0px rgba(255, 0, 0, 0.381);
 }
 
-.spinner {
-	width: 50px;
-	height: 50px;
-	border: 5px solid rgba(255, 255, 255, 0.3);
-	border-top: 5px solid rgba(0, 55, 1, 0.429);
-	border-radius: 50%;
-	animation: spin 2s linear infinite;
+.progress-bar {
+	width: 200px;
+	height: 20px;
+	background-color: rgba(0, 0, 0, 0.528);
+	border-radius: 10px;
+	overflow: hidden;
 }
 
-.loading-text {
-	font-size: 1.25rem;
-	font-weight: 500;
-	font-family: 'Inter', sans-serif;
-	text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+.progress-bar-fill {
+	height: 100%;
+	background-color: rgba(17, 0, 255, 0.429);
+	transition: width 0.3s ease-in-out;
 }
+
 
 @keyframes spin {
 	0% {
